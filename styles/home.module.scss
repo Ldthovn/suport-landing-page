@@ -1,0 +1,38 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  &-left {
+    width: 63%;
+    &-hover:hover {
+      a {
+        color: #2fa1b3;
+      }
+    }
+    a {
+      img {
+        transition: transform 0.7s;
+        object-fit: cover;
+      }
+      // &:hover {
+      //   img {
+      //     transform: scale(1.05) translateZ(0);
+      //   }
+      // }
+    }
+  }
+  &-right {
+    width: 35%;
+    &-hover {
+      border-bottom: 1px solid #e9ecef;
+      padding: 10px 0;
+      &:last-child {
+      border-bottom: unset;
+      }
+    }
+    &-hover:hover {
+      a {
+        color: #2fa1b3;
+      }
+    }
+  }
+}

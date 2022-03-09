@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "variables";
+@import "mixins";
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: $text-sm;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  // color: $textColor;
+  // background-color: $backgroundColor;
+
+  @include breakpoint-up(md) {
+    font-size: $text-md;
+  }
+
+  @include breakpoint-up(lg) {
+    font-size: $text-lg;
+  }
+}
+
+// Text
+h1,
+h2,
+h3 {
+  // font-family: "Teko-SemiBold", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  line-height: 1.15;
+  margin-top: 0px;
+}
+
+h1 {
+  font-size: 48px;
+
+  @include breakpoint-up(md) {
+    font-size: 60px;
+  }
+
+  @include breakpoint-up(lg) {
+    font-size: 64px;
+  }
+}
+
+p {
+  line-height: 1.5;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+.title-h1 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.25rem;
+  font-size: $title-h1-sm;
+  text-transform: uppercase;
+
+  @include breakpoint-up(md) {
+    margin-bottom: 2.25rem;
+    font-size: $title-h1-md;
+  }
+
+  @include breakpoint-up(lg) {
+    margin-bottom: 3.25rem;
+    font-size: $title-h1-lg;
+  }
+}
+
+.description {
+  font-size: $text-sm;
+
+  @include breakpoint-up(md) {
+    font-size: $text-md;
+  }
+}
+
+.title-h2 {
+  font-weight: bold;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-size: $title-h2-sm;
+
+  @include breakpoint-up(md) {
+    margin-bottom: 2rem;
+    font-size: $title-h2-md;
+  }
+
+  @include breakpoint-up(lg) {
+    margin-bottom: 3rem;
+    font-size: $title-h2-lg;
+  }
+}
+
+button {
+  font-family: "Teko-SemiBold", Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0px auto;
+  max-width: 1166px;
+
+  @include breakpoint-up(md) {
+    padding: 0 60px;
+  }
+}

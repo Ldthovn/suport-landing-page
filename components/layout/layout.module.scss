@@ -1,0 +1,36 @@
+.header {
+  font-size: 14px;
+  font-family: "Teko-Medium", Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  width: 100%;
+  color: #fff;
+  background: #2fa1b3;
+  .link-right {
+    padding: 10px 20px;
+    border-left: 1px solid hsla(0, 0%, 100%, 0.2);
+    text-transform: uppercase;
+    &:hover {
+      background: #2b94a5;
+    }
+  }
+  .link-left {
+    border-radius: 10px;
+    margin: 0 4px;
+    padding: 0 8px;
+    border: 1px solid hsla(0, 0%, 100%, 0.3);
+    &:hover {
+      background: hsla(0, 0%, 100%, 0.1);
+    }
+  }
+}
+
+.footer-header {
+  background: #2fa1b3;
+  a {
+    width: 160px;
+    height: 36px;
+    display: inline-block;
+    background: url(https://baomoi-static.zadn.vn/web/styles/img/desktop-logo.png)
+      0px 0px / 160px 72px;
+  }
+}
